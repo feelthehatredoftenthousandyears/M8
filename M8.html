@@ -1,471 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>mission 6</title>
+<title>mission 8</title>
 <meta content="text/html" charset="UTF-8"/>
 <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, 	maximum-scale=1, user-scalable=no"/>
 <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="fonts.css"/>
+<link href="M8style.css" rel="stylesheet" type="text/css"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!--兼容IE*/-->
-<style>
-html{
-	font-size: 625%;
-}
-body{
-	background-color: #fafafa;
-}
-.messagebox{
-	position: fixed;
-	top: 0;
-	width: 100%;
-	height: 40px;
-	background-color: #fff;
-	z-index: 100;
-}
-.phonenumber{
-	float:left;
-	margin-left: 20%;
-	height: 40px;
-	line-height: 40px;
-	color: #29b078;
-}
-.qq{
-	float: right;
-	margin:0 21.5% 0 0;
-	height: 40px;
-	line-height: 45px;
-	font-size: .24rem;
-	color: #29b078;
-	cursor: pointer;
-}
-.wechart{
-	float: right;
-	margin:0 10px 0 0;
-	height: 40px;
-	line-height: 45px;
-	font-size: .24rem;
-	color: #29b078;
-	cursor: pointer;
-}
-.weibo{
-	float: right;
-	margin:0 10px 0 0;
-	height: 40px;
-	line-height: 45px;
-	font-size: .24rem;
-	color: #29b078;
-	cursor: pointer;
-}
-.chosedclickstyle{
-	padding: 25px 10px 20px;
-	width: 100px;
-	text-align: center;
-	border-bottom: 5px solid #fff;
-}
-.guide{
-	margin-top: 40px;
-	background-color: #29b078;
-}
-.guideul{
-	float: right;
-	margin: 0 20%;
-}
-.navbutton{
-	background-color: #fff;
-}
-.chosed{
-	padding: 25px 10px;
-	width: 100px;
-	text-align: center;
-}
-.o1:focus{
-	background-color: #29b078!important;/*这里需要注意*/
-	color: #fff;
-}
-.o1:hover{
-	background-color: #29b078!important;/*这里需要注意*/
-	color: #fff;
-}
-.o1{
-	color: #fff;
-}
-.guideul .open>a, 
-.guideul .open>a:focus, 
-.guideul .open>a:hover{
-	background-color: #29b078;
-}
-.menulist>li>a{
-	color: #fff;
-}
-.menulist{
-	background-color: #29b078;
-}
-.menulist>li{
-	cursor: pointer;
-}
-#carouselbox{
-	margin-top: 140px;	
-}
-.lgpicture{
-	width: 100%;
-	height: 700px;
-}
-.carouseltext{
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 500px;
-	margin: 100px auto;
-	padding: 150px 20% 50px;
-	text-align: right;
-	font-size: .45rem;
-	color: #fff;
-	font-family: Microsoft JhengHei;
-}
-.p1{
-	height: 700px;
-	width: 100%;
-}
-.fifty{
-	font-size: .8rem;
-}
-.monkey{
-	font-size: .6rem;
-}
-.leftbutton,
-.rightbutton{
-	width: 30%;
-}
-.r1ba{
-	padding: 140px 50px 10px;
-	color: #999;
-}
-.mainbodyicon1{
-	width: 47px;
-	height: 65px;
-	margin: 0 auto 20px;
-	background-image: url(img/P3.png);
-	background-position: -127px 0;
-}
-.mainbodyicon11{
-	width: 60px;
-	height: 65px;
-	margin: 0 auto 20px;
-	background-image: url(img/P3.png);
-	background-position: 0 0;
-}
-.mainbodyicon12{
-	width: 53px;
-	height: 67px;
-	margin: 0 auto 20px;
-	background-image: url(img/P3.png);
-	background-position: -67px 0;
-}
-.mainbodytext1{
-	text-align: center;
-	font-weight: 600;
-	font-size: .16rem;
-}
-.mainbodytext2{
-	margin-top: 20px; 
-	text-align: left;
-}
-.r1bb{
-	padding: 160px 90px 10px;
-	color: #999;
-}
-.mainbodytext3{
-	margin: 20px 0 0;
-	color: #29b078;
-}
-.mainbodytext4{
-	margin: 5px 0 0; 
-}
-.h2text{
-	margin: 120px auto 40px;
-	text-align: center;
-	font-weight: 600;
-	font-size: .16rem;
-}
-.r1bc{
-	padding: 10px 40px;
-}
-.mainbodyicon2{
-	width: 37px;
-	height: 35px;
-	position: absolute;
-	left: -20px;
-	top: 55px;
-	background-image: url(img/P3.png);
-	background-position: -750px -138px;
-}
-.mainbodytext5{
-	display: inline-block;
-	margin: 30px 0;
-	width: 68px;
-	height: 68px;
-	text-align: center;
-	background-color: #fff;
-	border-radius: 50%;
-	line-height: 70px;
-	box-shadow: 1px 1px #999;
-	color: #29b078;
-	font-weight: 600;
-}
-.mainbodytext6{
-	display: inline-block;
-	width: 120px;
-	margin: 0 0 0 15px;
-	vertical-align: middle;
-	line-height: .22rem;
-	font-size: .12rem;
-	color: #999;
-}
-#carouselbox2{
-	padding-bottom: 60px;
-}
-.r1bf{
-	background-color: #fff;
-	padding: 20px 30px 30px;
-	margin: 10px;
-}
-.mainbodyicon31{
-	width: 110px;
-	height: 110px;
-	margin: 0 auto;
-	background-image: url(img/P3.png);
-	background-position: -330px -85px;
-	border-radius: 50%;
-}
-.mainbodyicon32{
-	width: 110px;
-	height: 110px;
-	margin: 0 auto;
-	background-image: url(img/P3.png);
-	background-position: -190px -95px;
-	border-radius: 50%;
-}
-.mainbodyicon33{
-	width: 110px;
-	height: 110px;
-	margin: 0 auto;
-	background-image: url(img/P3.png);
-	background-position: -20px -95px;
-	border-radius: 50%;
-}
-.mainbodyicon34{
-	width: 110px;
-	height: 110px;
-	margin: 0 auto;
-	background-image: url(img/P3.png);
-	background-position: -470px -75px;
-	border-radius: 50%;
-}
-.mainbodytext7{
-	margin: 20px auto; 
-	text-align: center;
-	font-size: .16rem;
-	font-weight: 600;
-}
-.mainbodytext8{
-	color: #999;
-}
-#carouselbox2>.carousel-indicators>.active{
-	background-color: #29b078;
-}
-#carouselbox2>.carousel-indicators>li{
-	background-color: #fff;
-	box-shadow: 1px 1px #999;
-}
-.h3text{
-	margin: 80px auto 40px;
-	text-align: center;
-	font-weight: 600;
-	font-size: .16rem;
-}
-.logobox{
-	margin: 0 20px;
-	text-align: center;
-	background-color: #fff;
-	box-shadow: 1px 1px 1px 0 #999;
-	font-size: 0;
-}
-.r1bg{
-	display: inline-block;
-	width: 210px;
-	height: 175px;
-	margin: 0 5px;
-	background-color: #fff;
-	cursor: pointer;
-}
-.logo1{
-	width: 150px;
-	height: 62px;
-	margin: 50px auto 0;
-	background-image: url(img/P3.png);
-	background-color: #fff;
-	background-position: -645px 0;
-}
-.logo2{
-	width: 60px;
-	height: 62px;
-	margin: 50px auto 0;
-	background-image: url(img/P3.png);
-	background-color: #fff;
-	background-position: -730px -75px;
-}
-.logo3{
-	width: 140px;
-	height: 62px;
-	margin: 50px auto 0;
-	background-image: url(img/P3.png);
-	background-color: #fff;
-	background-position: -500px 0;
-}
-.logo4{
-	width: 178px;
-	height: 62px;
-	margin: 50px auto 0;
-	background-image: url(img/P3.png);
-	background-color: #fff;
-	background-position: -185px 0;
-}
-.logo5{
-	width: 140px;
-	height: 62px;
-	margin: 50px auto 0;
-	background-image: url(img/P3.png);
-	background-color: #fff;
-	background-position: -365px 0;
-}
-.r1bg:hover{
-	box-shadow: darkgrey 0 0 10px 5px;
-}
-.r1bh{
-	padding: 20px 0;
-	margin-top: 60px; 
-	text-align: center;
-	background-color: #fff;
-}
-.r1bh>.container>li{
-	display: inline-block;
-	margin: 0 2%;
-	font-size: .12rem;
-}
-.r1bh>.container>li>a>span{
-	font-size: .2rem;
-	font-weight: 600;
-	vertical-align: middle;
-}
-.r1bh>.container>li>a{
-	color: #999;
-	cursor: pointer;
-	text-decoration: none;
-}
-.r1bh>.container{
-	margin-bottom: 0; 
-}
-.h4text{
-	margin-bottom: 20px;
-	width: 100%;
-	font-size: .16rem;
-	font-weight: 600;
-}
-footer{
-	background-color: #29b078;
-}
-.foot1{
-	padding: 40px;
-	color: #fff;
-}
-.foot2{
-	padding: 30px;
-	color: #fff;
-	line-height: .35rem;
-}
-.foot3{
-	text-align: right;
-	padding: 20px 10px 0 0;
-}
-.qrcode{
-	float: right;
-	width: 90px;
-	height: 90px;
-	background-image: url(img/P3.png);
-	background-color: #29b078;
-	background-position: -617px -75px;
-	margin: 5px 30px 0 0;
-}
-.qrcodetext{
-	width: 90px;
-	padding-right: 32px;
-	line-height: .2rem;
-	color: #fff;	
-}
-.foottext1{
-	margin-bottom: 30px;
-}
-.foottext2{
-	font-size: .12rem
-}
-.foottext2>a{
-	color: #fff;
-	cursor: pointer;
-}
-.foottext4{
-	border-bottom: 1px solid;
-}
-.foot4{
-	height: 30px;
-	width: 100%;
-	padding-top: 5px;
-	text-align: center;
-	color: #fff;
-	border-top: 1px solid lightgreen;
-}
-.foot2 a{
-	color: #fff;
-	cursor: pointer;
-}
-</style>
 </head>
 
 <body>
 <header>
 <div class="messagebox">
-	<div class="phonenumber">客服热线：241124112411</div>
-	<div class="qq"><span class="icon-QQ1"></span></div>
-	<div class="wechart"><span class="icon-微信2"></span></div>
-	<div class="weibo"><span class="icon-微博2"></span></div>
+    <div class="phonenumber">客服热线：241124112411</div>
+    <div class="qq" onclick="window.location.href='http://www.qq.com/'"><span class="icon-QQ1"></span></div>
+    <div class="wechart" onclick="window.location.href='http://www.weixin.com/'"><span class="icon-微信2"></span></div>
+    <div class="weibo" onclick="window.location.href='http://www.sina.com/'"><span class="icon-微博2"></span></div>
 </div>
 
-<div class="navbar navbar-fixed-top guide">
+<div class="navbar navbar-default guide">
 	<button class="navbar-toggle navbutton" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
          <span class="icon-bar"></span>
     </button>
-	<div class="collapse navbar-collapse navbar-responsive-collapse">
-    <ul class="nav navbar-nav guideul" id="guideulID">
+	<div class="collapse navbar-collapse navbar-responsive-collapse  guideulID">
+    <ul class="nav navbar-nav guideul">
       	<li class="dropdown chosedclickstyle">
-        	<a href="##" data-toggle="dropdown" class="dropdown-toggle o1">首页</a>
+        	<div href="##" data-toggle="dropdown" class="dropdown-toggle o1">首页</div>
        		<ul class="dropdown-menu menulist">
-        		<li><a>1231</a></li>
-        		<li><a>12312</a></li>
-        		<li><a>213321</a></li>
-        	</ul>
+            	<li><a href="M8.html">首页</a></li>
+                <li><a href="M8B.html">合作企业</a></li>
+                <li><a>En taro Adun</a></li>
+                <li><a>En taro Tassadar</a></li>
+                <li><a>En taro Zeratul</a></li>
+            </ul>
      	</li>
-    	<li class="chosed"><a class="o1" href="##">推荐</a></li>
-    	<li class="chosed"><a class="o1" href="##">关于</a></li>
-    	<li class="chosed"><a class="o1" href="##">职业</a></li>
+        <li class="chosed"><div class="o1" >推荐</div></li>
+        <li class="chosed"><div class="o1" >关于</div></li>
+        <li class="chosed"><div class="o1" onclick="window.location.href='M8A.html'">职业</div></li>
 	</ul>
 	</div>
 </div>
 </header>
 
 <!--data-ride="carousel"控制轮播-->
-<div id="carouselbox" class="carousel slide"  data-ride="carousel">
+<div id="carouselbox" class="carousel slide"  data-ride="1carousel">
   	<!-- Indicators -->
   	<ol class="carousel-indicators"><!-- 就是下面的4个小点 -->
    		<li data-target="#carouselbox" data-slide-to="0" class="active"></li>
@@ -750,20 +331,6 @@ footer{
   integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
   crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-    var oLis=document.getElementById("guideulID").getElementsByTagName("li");
-    var i,j;
-    var length=oLis.length;
-    for(i=0;i<length;i++){
-        oLis[i].onclick=function(){
-            for(j=0;j<length;j++){
-                oLis[j].className="chosed";
-            }
-            this.className+="clickstyle";
-        }
-    }
-</script>
 
 </body>
 </html>
