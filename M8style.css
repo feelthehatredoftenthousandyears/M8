@@ -12,6 +12,24 @@ body{
 	background-color: #fff;
 	z-index: 100;
 }
+.messagebox>span{
+	display: none;
+	margin-right: 5%;
+	text-align: right;
+	line-height: 40px;
+	color: #29b078;
+}
+.messagebox>span>a{
+	color: #000;
+}
+@media (max-width: 768px){
+        .messagebox div{
+        	display: none;
+       }
+       .messagebox>span{
+       		display: block;
+       }
+    }
 .phonenumber{
 	float:left;
 	margin-left: 20%;
@@ -55,6 +73,16 @@ body{
 	color: #fff;
 	cursor: pointer;
 }
+@media (max-width: 767px){
+		.guideul{
+			width: 70%;
+			margin-left: calc(59px + 10%);
+		}
+		.guideul li{
+			width: 100%;
+			text-align: center;
+		}	
+}
 .guide{
 	margin: 40px 0 0 0;
 	background-color: #29b078;
@@ -82,6 +110,20 @@ body{
 .chosed:hover{
 	border-bottom: 5px solid #fff;
 }
+@media (max-width: 768px){
+		.navbar-nav .open .dropdown-menu{
+			position: relative;
+			top: 0;
+			width: 100%;
+			background-color: #29b078;
+		}
+		.menulist>li>a{
+			color: #fff!important;
+		}
+		.r1bb{
+			text-align: center;
+		}
+	}
 .menulist>li>a{
 	color: #fff;
 }
@@ -152,7 +194,6 @@ body{
 }
 .mainbodytext2{
 	margin-top: 20px; 
-	text-align: left;
 }
 .r1bb{
 	padding: 160px 90px 10px;
@@ -278,7 +319,7 @@ body{
 	display: inline-block;
 	width: 210px;
 	height: 175px;
-	margin: 0 5px;
+	margin: 5px 5px;
 	background-color: #fff;
 	cursor: pointer;
 }
@@ -355,6 +396,26 @@ body{
 	font-size: .16rem;
 	font-weight: 600;
 }
+@media (max-width: 992px){
+	.mainbodytext2{
+		text-align: center;
+	}
+	.r1bc{
+		padding-left: 80px;
+	}
+	.mainbodyicon2{
+		left: 0;
+	}
+}
+@media (max-width: 768px){
+	.r1bc{
+		text-align: center;
+		padding: 10px 0;
+	}
+	.mainbodyicon2{
+		display: none;
+	}
+}
 footer{
 	background-color: #29b078;
 }
@@ -368,23 +429,22 @@ footer{
 	line-height: .35rem;
 }
 .foot3{
-	text-align: right;
 	padding: 20px 10px 0 0;
+	margin: 20px 0 0 0;
+	float: right;
 }
 .qrcode{
-	float: right;
 	width: 90px;
 	height: 90px;
 	background-image: url(img/P3.png);
 	background-color: #29b078;
 	background-position: -617px -75px;
-	margin: 5px 30px 0 0;
 }
 .qrcodetext{
-	width: 90px;
-	padding-right: 32px;
+	width: 100%;
 	line-height: .2rem;
-	color: #fff;	
+	color: #fff;
+	text-align: center;	
 }
 .foottext1{
 	margin-bottom: 30px;
@@ -410,6 +470,19 @@ footer{
 .foot2 a{
 	color: #fff;
 	cursor: pointer;
+}
+@media (max-width: 992px){
+	.foot3{
+		margin-top: 20px;
+	}
+}
+@media (max-width: 768px){
+	.foot3, .foot2, .foot1{
+		text-align: center;
+	}
+	.qrcode{
+		margin: 10px auto;
+	}
 }
 /*↑M8主页<分割线-------------------------------------------------------->*/
 
@@ -659,4 +732,9 @@ footer{
 }
 .p3text .inside li .text{
 	padding: 30px 60px;
+}
+@media(max-width: 768px){
+	.p3breadcrumbs{
+		padding-left: 20px; 
+	}
 }
