@@ -1,0 +1,127 @@
+@charset "UTF-8";
+//定义颜色和字体变量
+$gray: rgb(239,240,244);
+$lightblue: rgb(95,192,205);
+$lightgray: #c7c7c7;
+$darkgray: #b6b6b6;
+$red: #fb0404;
+$darkblue: #55a8b3;
+$orange: #fbb435;
+$yh: Microsoft YaHei;
+//浏览器前缀模块
+@mixin compatibility($value1, $value2) {
+	-webkit-#{$value1}: $value2;
+	-moz-#{$value1}: $value2;
+	-ms-#{$value1}: $value2;
+	-o-#{$value1}: $value2;
+	#{$value1}: $value2;
+}
+@mixin border($side, $px: 1px, $bcolor: $lightgray) {
+	border#{$side}: $px solid $bcolor;
+}
+@mixin shadow($svalue, $scolor) {
+	box-shadow: 0 0 $svalue 2px $scolor;
+}
+//start checkbox
+.c-radiobox {
+	padding: 0;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #eeeded;
+	border: 1px solid #eeeded;
+	background-color: #fff;
+}
+.t-company {
+	padding: 20px 0;
+	text-align: center;
+	letter-spacing: .1rem;
+	font-size: .18rem;
+	font-weight: 600;
+	border-bottom: 1px solid #eeeded; 
+}
+.u-company {
+	display: block;
+	margin: 30px auto;
+	width: 60%;
+	color: #29b078;
+	font-size: .14rem;
+	cursor: pointer;
+}
+#hiddenoption1:checked ~ .c-radiobox .c1,
+#hiddenoption2:checked ~ .c-radiobox .c2,
+#hiddenoption3:checked ~ .c-radiobox .c3,
+#hiddenoption4:checked ~ .c-radiobox .c4,
+#hiddenoption5:checked ~ .c-radiobox .c5,
+#hiddenoption6:checked ~ .c-radiobox .c6,
+#hiddenoption7:checked ~ .c-radiobox .c7,
+#hiddenoption8:checked ~ .c-radiobox .c8,
+#hiddenoption9:checked ~ .c-radiobox .c9,
+#hiddenoption10:checked ~ .c-radiobox .c10,
+#hiddenoption11:checked ~ .c-radiobox .c11,
+#hiddenoption12:checked ~ .c-radiobox .c12 {
+	color: orange;
+	div {
+		background-color: orange;
+	}
+}
+.u-company>div {
+	display: inline-block;
+	width: .12rem;
+	height: .12rem;
+	margin-right: 5px;
+	border-radius: 50%;
+	border: 1px solid red;
+	vertical-align: middle;
+}
+//rightside-----------------------------------------------------------
+.c-rightside {
+	margin: 30px 0;
+	color: #9f9a98;
+}
+.m-tabhead {
+	padding: 30px 60px 40px;
+	font-size: .14rem;
+	border-bottom: 1px solid #eeeded;
+}
+.p-handshake {
+	float: left;
+	width: 157px;
+	height: 87px;
+	margin: 0 20px;
+	background: url(img/P3.png) -641px -232px;
+}
+.c-companydescription {
+	margin: 0 10px;
+	padding: 0;
+	border: 1px solid #eeeded;
+	border-radius: 5px;
+	box-shadow: 0 0 3px #eeeded;
+	background-color: #fff;
+	li {
+		display: none;
+	}
+}
+.t-companydescription {
+	padding: 30px 60px;
+	font-size: .14rem;
+}
+#hiddenoption1:checked ~ .c-rightside .t1,
+#hiddenoption2:checked ~ .c-rightside .t2,
+#hiddenoption3:checked ~ .c-rightside .t3,
+#hiddenoption4:checked ~ .c-rightside .t4,
+#hiddenoption5:checked ~ .c-rightside .t5,
+#hiddenoption6:checked ~ .c-rightside .t6,
+#hiddenoption7:checked ~ .c-rightside .t7,
+#hiddenoption8:checked ~ .c-rightside .t8,
+#hiddenoption9:checked ~ .c-rightside .t9,
+#hiddenoption10:checked ~ .c-rightside .t10,
+#hiddenoption11:checked ~ .c-rightside .t11,
+#hiddenoption12:checked ~ .c-rightside .t12 {
+	display: block;
+}
+@media(max-width: 768px) {
+	.m-breadcrumbs {
+		padding-left: 20px; 
+	}
+}

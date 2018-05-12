@@ -1,0 +1,139 @@
+.m-probox {
+  margin: 0;
+  padding: 15px 0;
+  font-size: .14rem;
+  color: #a9a9a9;
+  border-bottom: 1px solid #edf1f2; }
+
+.u-probox1 input[type=radio] {
+  display: none; }
+
+.u-prooption {
+  display: inline-block;
+  padding: 3px 5px;
+  margin: 0 10px;
+  color: #000; }
+
+.m-probox input:checked + label {
+  background: #29b078;
+  color: #fff; }
+
+.u-esptitle {
+  padding: 20px 0;
+  margin: 0;
+  font-size: .15rem;
+  font-weight: 600;
+  font-family: Microsoft YaHei;
+  border-bottom: 1px solid #a9a9a9; }
+
+.m-mainblock {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 15px; }
+
+.c-boxhead {
+  margin: 0 2px;
+  background: #fff;
+  box-shadow: 0px 0px 2px 1px #a9a9a9; }
+
+@media (max-width: 360px) {
+  .m-mainblock {
+    padding: 0; } }
+.c-boxheadimg {
+  float: left;
+  margin: 20px 10px;
+  width: 140px;
+  height: 140px;
+  background: url(img/P3.png) -420px -205px; }
+
+.c-boxheadtext {
+  float: left;
+  width: calc(100% - 180px);
+  padding: 30px 10px 0;
+  word-wrap: break-word;
+  font-size: .13rem; }
+
+.c-boxheadtext > div {
+  margin: 3% 0;
+  font-size: .17rem;
+  font-weight: 600; }
+
+.c-boxhead td {
+  padding: 15px 10px;
+  border-bottom: 1px solid #edf1f2;
+  font-size: .12rem; }
+
+.c-boxhead .rare, .c-boxhead .money {
+  width: 100%; }
+
+.c-boxhead .rare td {
+  width: 50%; }
+
+.c-boxhead .money td {
+  padding: 10px 10px; }
+
+.c-boxhead .rare .td1,
+.c-boxhead .rare .td2 {
+  border-top: 1px solid #edf1f2; }
+
+.c-boxhead .rare .td1,
+.c-boxhead .rare .td3 {
+  border-right: 1px solid #edf1f2; }
+
+.c-boxhead .money .td1,
+.c-boxhead .money .td4 {
+  border-style: none;
+  text-align: center;
+  color: #a9a9a9; }
+
+.c-boxhead .money .td3,
+.c-boxhead .money .td2,
+.c-boxhead .money .td5 {
+  border-left: 1px solid #edf1f2;
+  padding-left: 30px; }
+
+.c-boxhead .money .td6,
+.c-boxhead .money .td7,
+.c-boxhead .money .td8 {
+  text-align: right; }
+
+.c-boxhead .rare td {
+  color: #a9a9a9; }
+
+.c-boxhead .number {
+  padding: 15px 10px;
+  font-size: .16rem;
+  border-bottom: 1px solid #edf1f2; }
+
+.c-boxhead .tips {
+  padding: 15px 10px;
+  font-size: .12rem;
+  color: #a9a9a9;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.c-boxheadpanel:hover {
+  background-color: #000;
+  opacity: .7; }
+
+.c-boxheadpanel {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  box-sizing: border-box;
+  padding: 60px 60px 30px;
+  width: calc(100% - 30px);
+  height: 100%;
+  line-height: .2rem;
+  font-size: .14rem;
+  color: #fff;
+  opacity: 0; }
+
+.c-boxheadpanel div {
+  margin: 20px 0;
+  text-align: center;
+  font-size: .2rem; }
+
+/*# sourceMappingURL=M8Anewstyle.css.map */

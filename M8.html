@@ -2,280 +2,268 @@
 <html>
 <head>
 <title>mission 8</title>
-<meta content="text/html" charset="UTF-8"/>
-<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, 	maximum-scale=1, user-scalable=no"/>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="fonts.css"/>
-<link href="M8style.css" rel="stylesheet" type="text/css"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!--兼容IE*/-->
+<meta content="text/html" charset="UTF-8">
+<meta id="viewport" name="viewport" content="width=device-width, 
+	initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"><!--兼容IE*/-->
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="fonts.css" rel="stylesheet" type="text/css">
+<link href="M8newstyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<header>
-<div class="messagebox">
-    <div class="phonenumber">客服热线：241124112411</div>
-    <div class="qq" onclick="window.location.href='http://www.qq.com/'"><span class="icon-QQ1"></span></div>
-    <div class="wechart" onclick="window.location.href='http://www.weixin.com/'"><span class="icon-微信2"></span></div>
-    <div class="weibo" onclick="window.location.href='http://www.sina.com/'"><span class="icon-微博2"></span></div>
-    <span><a>登陆</a>&nbsp;|&nbsp;<a>注册</a></span> 
+<div class="m-head">
+    <div class="t-phonenumber">客服热线：241124112411</div>
+    <div class="u-qqicon navicon" onclick="window.location.href='http://www.qq.com/'">
+    	<span class="icon-QQ1"></span>
+    </div>
+    <div class="u-wecharticon navicon" onclick="window.location.href='http://www.weixin.com/'">
+    	<span class="icon-微信2"></span>
+    </div>
+    <div class="u-weiboicon navicon" onclick="window.location.href='http://www.sina.com/'">
+    	<span class="icon-微博2"></span>
+    </div>
+    <span class="u-phonelog">
+    	<a>登陆</a>&nbsp;|&nbsp;<a>注册</a>
+    </span> 
 </div>
 
-<div class="navbar navbar-default guide">
-	<button class="navbar-toggle navbutton" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-    </button>
-	<div class="collapse navbar-collapse navbar-responsive-collapse  guideulID">
-    <ul class="nav navbar-nav guideul">
-      	<li class="dropdown chosedclickstyle">
-        	<div href="##" data-toggle="dropdown" class="dropdown-toggle o1">首页</div>
-       		<ul class="dropdown-menu menulist">
-            	<li><a href="M8.html">首页</a></li>
-                <li><a href="M8B.html">合作企业</a></li>
-                <li><a>En taro Adun</a></li>
-                <li><a>En taro Tassadar</a></li>
-                <li><a>En taro Zeratul</a></li>
-            </ul>
-     	</li>
-        <li class="chosed"><div class="o1" >推荐</div></li>
-        <li class="chosed"><div class="o1" >关于</div></li>
-        <li class="chosed"><div class="o1" onclick="window.location.href='M8A.html'">职业</div></li>
-	</ul>
+<div class="m-navbar">
+	<input id="menu" type="checkbox" name="menu">
+	<label class="u-navbutton" for="menu" type="button"><div class="navbtn">---</div></label>
+	<div class="t-nav chosed" onclick="window.location.href='M8.html'">首页</div>
+	<div class="t-nav" onclick="window.location.href='M8B.html'">职业</div>
+	<div class="t-nav" onclick="window.location.href='M8A.html'">推荐</div>
+	<div class="t-nav">关于</div>
+</div>
+
+<!--轮播-->
+<div class="m-carousel">
+	<input class="u-carouselitem1" id="item1" type="radio" name="carousel" checked="1">
+	<input class="u-carouselitem2" id="item2" type="radio" name="carousel">
+	<input class="u-carouselitem3" id="item3" type="radio" name="carousel">
+  	
+  	<!-- 每一页的内容 -->
+  	<div class="carouselview">
+	    <div class="c-carouselbox1 carouselbox">
+	    	<img class="p-carousel" src="img/P1.png">
+	    	<div class="t-carousel">
+	    		作为一个死徒，你是否想要了解升格之链
+	    		<span class="fifty"><br/>第一位</span>
+	    		<span class="monkey">的高阶领主，都会哪些技能呢？</span>
+	    		<label class="u-next" for="item2">></label>
+	    	</div>
+	    </div>
+
+	    <div class="c-carouselbox2 carouselbox">
+	    	<img class="p-carousel" src="img/P1.png">
+	    	<div class="t-carousel">
+	    		作为一个晋升者，你是否想要了解升格之链
+	    		<span class="fifty"><br/>第一位</span>
+	    		<span class="monkey">的高阶领主，都会哪些技能呢？</span>
+	    		<label class="u-next" for="item3">></label>
+	    		<label class="u-previous" for="item1"><</label>
+	    	</div> 
+	    </div>
+
+	    <div class="c-carouselbox3 carouselbox">
+	    	<img class="p-carousel" src="img/P1.png">
+	    	<div class="t-carousel">
+	    		作为一个天罚行者，你是否想要了解升格之链
+	    		<span class="fifty"><br/>第一位</span>
+	    		<span class="monkey">的高阶领主，都会哪些技能呢？</span>
+	    		<label class="u-previous" for="item2"><</label>
+	    	</div> 
+	    </div>
 	</div>
-</div>
-</header>
 
-<!--data-ride="carousel"控制轮播-->
-<div id="carouselbox" class="carousel slide"  data-ride="1carousel">
-  	<!-- Indicators -->
-  	<ol class="carousel-indicators"><!-- 就是下面的4个小点 -->
-   		<li data-target="#carouselbox" data-slide-to="0" class="active"></li>
-    	<li data-target="#carouselbox" data-slide-to="1"></li>
-    	<li data-target="#carouselbox" data-slide-to="2"></li>
-  	</ol>
-  	<!-- Wrapper for slides -->
-  	<div class="carousel-inner"><!-- 每一页的内容 -->
-    	<div class="item active">
-    		<div class="lgpicture">
-    			<img class="p1" src="img/P1.png"/>
-    			<div class="carouseltext">作为你一个初级菜鸟，你是否想要了解<span class="fifty"><br/>50万</span><span class="monkey">年薪的程序猿，都会哪些技能呢？</span></div> 
-    		</div>	  		
-    	</div>
-
-    	<div class="item">
-    		<div class="lgpicture">
-    			<img class="p1" src="img/P1.png"/>
-    			<div class="carouseltext">作为你一个初级菜鸟，你是否想要了解<span class="fifty"><br/>50万</span><span class="monkey">年薪的程序猿，都会哪些技能呢？</span></div> 
-    		</div>	  		
-    	</div>
-
-    	<div class="item">
-    		<div class="lgpicture">
-    			<img class="p1" src="img/P1.png"/>
-    			<div class="carouseltext">作为你一个初级菜鸟，你是否想要了解<span class="fifty"><br/>50万</span><span class="monkey">年薪的程序猿，都会哪些技能呢？</span></div> 
-    		</div>	  		
-    	</div>
+ 	<!-- 翻页列表 -->
+  	<div class="m-carousellistbox">
+   		<label for="item1" class="u-carouseli1 carouseli"></label>
+    	<label for="item2" class="u-carouseli2 carouseli"></label>
+    	<label for="item3" class="u-carouseli3 carouseli"></label>
   	</div>
- 	<!-- Controls --><!-- 翻页的按钮 -->
-  	<a class="left carousel-control leftbutton" href="#carouselbox" data-slide="prev">
-    	<span class="glyphicon glyphicon-chevron-left"></span>
-  	</a>
-  	<a class="right carousel-control rightbutton" href="#carouselbox" data-slide="next">
-    	<span class="glyphicon glyphicon-chevron-right"></span>
-  	</a>
 </div>
 
-<div class="container mainbodybox1">
-	<div class="row">
-		<div class="col-md-3 col-sm-6 r1ba">
-			<div class="mainbodyicon1"></div>
-			<div class="mainbodytext1">高效</div>
-			<div class="mainbodytext2">将5年到7年的成长时间，缩短到1年到3年。</div>
+<div class="g-main">
+	<div class="c-row">
+		<div class="col-md-3 col-sm-6 r1c1"><!--第一行第一个-->
+			<div class="p-mainicon1"></div>
+			<div class="t-maintext1">高效</div>
+			<div class="t-maintext2">将5年到7年的成长时间，缩短到1年到3年。</div>
 		</div>
 
-		<div class="col-md-3 col-sm-6 r1ba">
-			<div class="mainbodyicon11"></div>
-			<div class="mainbodytext1">规范</div>
-			<div class="mainbodytext2">标准的实战课程。不会走弯路</div>
+		<div class="col-md-3 col-sm-6 r1c1">
+			<div class="p-mainicon2"></div>
+			<div class="t-maintext1">规范</div>
+			<div class="t-maintext2">标准的实战课程。不会走弯路</div>
 		</div>
 
-		<div class="col-md-3 col-sm-6 r1ba">
-			<div class="mainbodyicon12"></div>
-			<div class="mainbodytext1">人脉</div>
-			<div class="mainbodytext2">同班好友，同院学长，技术大师， 入学就混入职脉圈，为以后铺平道路。</div>
+		<div class="col-md-3 col-sm-6 r1c1">
+			<div class="p-mainicon3"></div>
+			<div class="t-maintext1">人脉</div>
+			<div class="t-maintext2">同班好友，同院学长，技术大师， 入学就混入职脉圈，为以后铺平道路。</div>
 		</div>
 
-		<div class="col-md-3 col-sm-6 r1bb">
-			<div class="mainbodytext3">
+		<div class="col-md-3 col-sm-6 r1c2">
+			<div class="t-maintext3">
 				<span class="glyphicon glyphicon-user"></span>
 				24110
 			</div>
-			<div class="mainbodytext4">累计在线学习人数</div>
-			<div class="mainbodytext3">
+			<div class="t-maintext4">累计在线学习人数</div>
+			<div class="t-maintext3">
 				<span class="glyphicon glyphicon-user"></span>
 				24110
 			</div>
-			<div class="mainbodytext4">学员已经找到满意工作</div>
+			<div class="t-maintext4">学员已经找到满意工作</div>
 		</div>
 	</div>
 
 <!--how to study-->
-	<div class="row h2text">如何学习</div>
+	<div class="u-linetitle">如何学习</div>
 
-	<div class="row">
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodytext5">1</div>
-			<div class="mainbodytext6">匹配你现在的个人情况寻找适合自己的岗位</div>
+	<div class="c-row">
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="t-maintext5">1</div>
+			<div class="t-maintext6">匹配你现在的个人情况寻找适合自己的岗位</div>
 		</div>
 
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodyicon2"></div>
-			<div class="mainbodytext5">2</div>
-			<div class="mainbodytext6">了解职业前景薪金待遇、 竞争压力等</div>
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="p-mainicon4"></div>
+			<div class="t-maintext5">2</div>
+			<div class="t-maintext6">了解职业前景薪金待遇、 竞争压力等</div>
 		</div>
 
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodyicon2"></div>
-			<div class="mainbodytext5">3</div>
-			<div class="mainbodytext6">掌握行业内顶级技能</div>
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="p-mainicon4"></div>
+			<div class="t-maintext5">3</div>
+			<div class="t-maintext6">掌握行业内顶级技能</div>
 		</div>
 
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodyicon2"></div>
-			<div class="mainbodytext5">4</div>
-			<div class="mainbodytext6">查看职业目标任务</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodytext5">5</div>
-			<div class="mainbodytext6">参考学习资源，掌握技能点，逐个完成任务</div>
-		</div>
-
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodyicon2"></div>
-			<div class="mainbodytext5">6</div>
-			<div class="mainbodytext6">加入班级，和小伙伴们互帮互助，一块学习</div>
-		</div>
-
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodyicon2"></div>
-			<div class="mainbodytext5">7</div>
-			<div class="mainbodytext6">选择导师，一路引导，加速自己成长</div>
-		</div>
-
-		<div class="col-md-3 col-sm-6 r1bc">
-			<div class="mainbodyicon2"></div>
-			<div class="mainbodytext5">8</div>
-			<div class="mainbodytext6">完成职业技能，升级业界大牛</div>
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="p-mainicon4"></div>
+			<div class="t-maintext5">4</div>
+			<div class="t-maintext6">查看职业目标任务</div>
 		</div>
 	</div>
 
-	<div class="row h2text">优秀学员展示</div>
+	<div class="c-row">
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="t-maintext5">5</div>
+			<div class="t-maintext6">参考学习资源，掌握技能点，逐个完成任务</div>
+		</div>
 
-	<div class="row">
-		<div class="col-md-12 r1bd">
-			<div id="carouselbox2" class="carousel slide" data-ride="carousel">
-  				<!-- Indicators -->
-  				<ol class="carousel-indicators"><!-- 就是下面的4个小点 -->
-   					<li data-target="#carouselbox2" data-slide-to="0" class="active"></li>
-    				<li data-target="#carouselbox2" data-slide-to="1"></li>
-    				<li data-target="#carouselbox2" data-slide-to="2"></li>
-    				<li data-target="#carouselbox2" data-slide-to="3"></li>
-  				</ol>
-  				<!-- Wrapper for slides -->
-  				<div class="carousel-inner"><!-- 每一页的内容 -->
-    				<div class="item active">
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon31"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="p-mainicon4"></div>
+			<div class="t-maintext5">6</div>
+			<div class="t-maintext6">加入班级，和小伙伴们互帮互助，一块学习</div>
+		</div>
 
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon32"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="p-mainicon4"></div>
+			<div class="t-maintext5">7</div>
+			<div class="t-maintext6">选择导师，一路引导，加速自己成长</div>
+		</div>
 
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon33"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>
+		<div class="col-md-3 col-sm-6 r2c1">
+			<div class="p-mainicon4"></div>
+			<div class="t-maintext5">8</div>
+			<div class="t-maintext6">完成职业技能，升级业界大牛</div>
+		</div>
+	</div>
 
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon34"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>	  		
-    				</div>
+	<div class="u-linetitle">优秀学员展示</div>
 
-    				<div class="item">
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon31"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>
+	<div class="m-carousel2">
+		<input class="u-carouselitem4" id="item4" type="radio" name="carousel2" checked="1">
+		<input class="u-carouselitem5" id="item5" type="radio" name="carousel2">
+	  	<!-- 每一页的内容 -->
+	  	<div class="carouselview">
+		    <div class="c-carouselbox4 carouselbox"> 
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon5"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon6"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon7"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon8"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
+			</div>
 
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon32"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>
-
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon33"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>
-
-    					<div class="col-md-3 col-sm-6 r1be"> 
-    						<div class="r1bf">   			
-    							<div class="mainbodyicon34"></div>
-    							<div class="mainbodytext7">技术顾问：罗大佑</div>
-    							<div class="mainbodytext8">百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。</div>
-    						</div>
-    					</div>	  		
-    				</div>
-
-  				</div>
+			<div class="c-carouselbox5 carouselbox"> 
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon5"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon6"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon7"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
+			    <div class="col-md-3 col-sm-6 u-carouseloption">	
+		    		<div class="p-mainicon8"></div>
+		    		<div class="t-maintext7">技术顾问：罗大佑</div>
+		    		<div class="t-maintext8">
+		    			百度技术总监：互联网基础 服务领域，从事虚拟主机、 云服务器、域名。曾任新网高级技术经理，负责技术研 发、团队管理与建设。
+		    		</div>
+			    </div>
 			</div>
 		</div>
+
+	 	<!-- 翻页列表 -->
+	  	<div class="m-carousellistbox2">
+	   		<label for="item4" class="carouseli2 u-carouseli4"></label>
+	    	<label for="item5" class="carouseli2 u-carouseli5"></label>
+	  	</div>
 	</div>
 
-	<div class="row h3text">战略合作企业</div>
+	<div class="u-linetitle">战略合作企业</div>
 		
-	<div class="row logobox">
-		<div class="r1bg"><div class="logo1"></div></div>
-		<div class="r1bg"><div class="logo2"></div></div>
-		<div class="r1bg"><div class="logo3"></div></div>
-		<div class="r1bg"><div class="logo4"></div></div>
-		<div class="r1bg"><div class="logo5"></div></div>
+	<div class="m-coop">
+		<div class="u-compation"><div class="p-logo1"></div></div>
+		<div class="u-compation"><div class="p-logo2"></div></div>
+		<div class="u-compation"><div class="p-logo3"></div></div>
+		<div class="u-compation"><div class="p-logo4"></div></div>
+		<div class="u-compation"><div class="p-logo5"></div></div>
 	</div>
 </div>
 
-	
-
-<div class="r1bh">
-	<div class="row h4text">友情链接</div>
-	<ul class="container">
+<div class="m-friendlinks">
+	<div class="u-linetitle2">友情链接</div>
+	<ul class="c-links">
 		<li><a><span>·</span>&emsp;手机软件</a></li>
 		<li><a><span>·</span>&emsp;教师招聘</a></li>
 		<li><a><span>·</span>&emsp;找工作</a></li>
@@ -287,7 +275,7 @@
 		<li><a><span>·</span>&emsp;教师招聘</a></li>
 		<li><a><span>·</span>&emsp;找工作</a></li>
 	</ul>
-	<ul class="container">
+	<ul class="c-links">
 		<li><a><span>·</span>&emsp;手机软件</a></li>
 		<li><a><span>·</span>&emsp;教师招聘</a></li>
 		<li><a><span>·</span>&emsp;找工作</a></li>
@@ -304,34 +292,23 @@
 
 
 <footer>
-	<div class="container footbox">
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 foot1">
-				<div class="foottext1">技能树——改变你我</div><br/>
-				<div class="foottext2"><a>关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>合作企业</a></div>
+		<div class="c-row">
+			<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 m-weblink1">
+				<div class="t-foot1">技能树——改变你我</div><br/>
+				<div class="t-foot2"><a>关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>合作企业</a></div>
 			</div>
-			<div class="col-lg-3 col-sm-5 col-xs-12 foot2">
-				<span class="foottext3">旗下网站</span><br/>
-				<span class="foottext4"><a>草船云孵化器</a></span>&emsp;&emsp;&emsp;<a>最强IT特训营</a><br/>
+			<div class="col-lg-3 col-sm-5 col-xs-12 m-weblink2">
+				<span class="t-foot3">旗下网站</span><br/>
+				<span class="t-foot4"><a>草船云孵化器</a></span>&emsp;&emsp;&emsp;<a>最强IT特训营</a><br/>
 				<a>葡萄藤轻游戏</a>&emsp;&emsp;&emsp;<a>桌游精灵</a>
 			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 foot3">
-				<span class="qrcodetext">微信公众平台</span>
-				<div class="qrcode"></div>			
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 m-weblink3">
+				<span class="t-qrcode">微信公众平台</span>
+				<div class="p-qrcode"></div>			
 			</div>
 		</div>
-	</div>
-	<div class="foot4">  Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP</div>
+	<div class="u-copyright">  Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP</div>
 </footer>
-
-
-
-<!-- Latest compiled and minified CSS -->
-<script
-  src="https://code.jquery.com/jquery-1.12.4.js"
-  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>

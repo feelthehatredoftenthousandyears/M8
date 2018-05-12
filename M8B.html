@@ -2,126 +2,117 @@
 <html>
 <head>
 <title>mission 8</title>
-<meta content="text/html" charset="UTF-8"/>
-<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1,   maximum-scale=1, user-scalable=no"/>
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<link rel="stylesheet" href="fonts.css"/>
-<link href="M8style.css" rel="stylesheet" type="text/css"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!--兼容IE*/-->
+<meta content="text/html" charset="UTF-8">
+<meta id="viewport" name="viewport" content="width=device-width, 
+    initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"><!--兼容IE*/-->
+<link href="reset.css" rel="stylesheet" type="text/css">
+<link href="global.css" rel="stylesheet" type="text/css">
+<link href="fonts.css" rel="stylesheet" type="text/css">
+<link href="M8Bnewstyle.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-<header>
-<div class="messagebox">
-    <div class="phonenumber">客服热线：241124112411</div>
-    <div class="qq" onclick="window.location.href='http://www.qq.com/'"><span class="icon-QQ1"></span></div>
-    <div class="wechart" onclick="window.location.href='http://www.weixin.com/'"><span class="icon-微信2"></span></div>
-    <div class="weibo" onclick="window.location.href='http://www.sina.com/'"><span class="icon-微博2"></span></div>
-    <span><a>登陆</a>&nbsp;|&nbsp;<a>注册</a></span> 
-</div>
-
-<div class="navbar navbar-default guide">
-    <button class="navbar-toggle navbutton" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-    </button>
-    <div class="collapse navbar-collapse navbar-responsive-collapse  guideulID">
-    <ul class="nav navbar-nav guideul">
-        <li class="dropdown chosedclickstyle">
-            <div href="##" data-toggle="dropdown" class="dropdown-toggle o1">首页</div>
-            <ul class="dropdown-menu menulist">
-            	<li><a href="M8.html">首页</a></li>
-                <li><a href="M8B.html">合作企业</a></li>
-                <li><a>En taro Adun</a></li>
-                <li><a>En taro Tassadar</a></li>
-                <li><a>En taro Zeratul</a></li>
-            </ul>
-        </li>
-        <li class="chosed"><div class="o1" >推荐</div></li>
-        <li class="chosed"><div class="o1" >关于</div></li>
-        <li class="chosed"><div class="o1" onclick="window.location.href='M8A.html'">职业</div></li>
-    </ul>
+<div class="m-head">
+    <div class="t-phonenumber">客服热线：241124112411</div>
+    <div class="u-qqicon navicon" onclick="window.location.href='http://www.qq.com/'">
+        <span class="icon-QQ1"></span>
     </div>
+    <div class="u-wecharticon navicon" onclick="window.location.href='http://www.weixin.com/'">
+        <span class="icon-微信2"></span>
+    </div>
+    <div class="u-weiboicon navicon" onclick="window.location.href='http://www.sina.com/'">
+        <span class="icon-微博2"></span>
+    </div>
+    <span class="u-phonelog">
+        <a>登陆</a>&nbsp;|&nbsp;<a>注册</a>
+    </span> 
 </div>
-</header>
 
-<div class="p3picture"><img src="img/P2.png"></div>
-<div class="container">
-    <div class="row p3breadcrumbs"><a href="M8.html">首页></a>合作企业</div>
+<div class="m-navbar">
+    <input id="menu" type="checkbox" name="menu">
+    <label class="u-navbutton" for="menu" type="button"><div class="navbtn">---</div></label>
+    <div class="t-nav" onclick="window.location.href='M8.html'">首页</div>
+    <div class="t-nav  chosed" onclick="window.location.href='M8B.html'">职业</div>
+    <div class="t-nav" onclick="window.location.href='M8A.html'">推荐</div>
+    <div class="t-nav">关于</div>
+</div>
 
-    <div class="row">
-    	<div class="col-md-3 col-sm-4 col-xs-12 p3radiobox">
-    		<div id="option"> 
-    			<div class="company">合作企业</div>
-    			<span data-toggle="tab" href="#c1" class="o1checkedstyle"><div></div>三锤安保</span>
-    			<span data-toggle="tab" href="#c2" class="o1"><div></div>UED投资银行</span>
-    			<span data-toggle="tab" href="#c3" class="o1"><div></div>屠牛快捷酒店连锁</span>
-    			<span data-toggle="tab" href="#c1" class="o1"><div></div>巴布洛斯餐饮集团</span>
-    			<span data-toggle="tab" href="#c2" class="o1"><div></div>白银之手人力派遣</span>
-    			<span data-toggle="tab" href="#c3" class="o1"><div></div>沃斯卡亚重工</span>
-    			<span data-toggle="tab" href="#c1" class="o1"><div></div>岛田兄弟株式会社</span>
-    			<span data-toggle="tab" href="#c2" class="o1"><div></div>冰封王座科技</span>
-    			<span data-toggle="tab" href="#c3" class="o1"><div></div>科普卢经济开发联合</span>
-    			<span data-toggle="tab" href="#c1" class="o1"><div></div>崔斯特姆振兴委员会</span>
-    			<span data-toggle="tab" href="#c2" class="o1"><div></div>奎尔萨拉斯药业</span>
-    			<span data-toggle="tab" href="#c3" class="o1"><div></div>亚瑞特旅行社</span>
-    		</div>
+<div><img class="wth-100p" src="img/P2.png"></div>
+<div class="g-main">
+    <div class="m-breadcrumbs"><a href="M8.html">首页></a>合作企业</div>
+
+    <div class="c-row">
+        <input class="u-checkbox" id="hiddenoption1" type="radio" name="checkbox1" checked="1">
+        <input class="u-checkbox" id="hiddenoption2" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption3" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption4" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption5" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption6" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption7" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption8" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption9" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption10" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption11" type="radio" name="checkbox1">
+        <input class="u-checkbox" id="hiddenoption12" type="radio" name="checkbox1">
+
+    	<div class="col-md-3 col-sm-4 col-xs-12 c-radiobox">
+            <div class="t-company">合作企业</div>
+            <label class="u-company c1" for="hiddenoption1"><div class="u-roll"></div>三锤安保</label>
+            <label class="u-company c2" for="hiddenoption2"><div class="u-roll"></div>UED投资银行</label>
+            <label class="u-company c3" for="hiddenoption3"><div class="u-roll"></div>屠牛快捷酒店连锁</label>
+            <label class="u-company c4" for="hiddenoption4"><div class="u-roll"></div>巴布洛斯餐饮集团</label>
+            <label class="u-company c5" for="hiddenoption5"><div class="u-roll"></div>白银之手人力派遣</label>
+            <label class="u-company c6" for="hiddenoption6"><div class="u-roll"></div>沃斯卡亚重工</label>
+            <label class="u-company c7" for="hiddenoption7"><div class="u-roll"></div>岛田兄弟株式会社</label>
+            <label class="u-company c8" for="hiddenoption8"><div class="u-roll"></div>冰封王座科技</label>
+            <label class="u-company c9" for="hiddenoption9"><div class="u-roll"></div>科普卢经济开发联合</label>
+            <label class="u-company c10" for="hiddenoption10"><div class="u-roll"></div>崔斯特姆振兴委员会</label>
+            <label class="u-company c11" for="hiddenoption11"><div class="u-roll"></div>奎尔萨拉斯药业</label>
+            <label class="u-company c12" for="hiddenoption12"><div class="u-roll"></div>亚瑞特旅行社</label>
     	</div>
 
-    	<div class="col-md-9 col-sm-8 col-xs-12 p3text">
-    		<ul class="tab-content inside">
-    			<li id="c1" class="tab-pane fade in active">
-    				<div class="tabtitle">
-    					<div class="picture"></div>
-    					土豆网公司成立于1998年11月， 是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健、高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）。</div>
-    				<div class="text">
-    				<p>&emsp;&emsp;土豆是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身土豆网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“土豆网”正式更名为“土豆”，标志着土豆进入品牌发展的新阶段。</p>
+    	<div class="col-md-9 col-sm-8 col-xs-12 c-rightside">
+    		<ul class="c-companydescription">
+    			<li class="t1">
+    				<div class="m-tabhead">
+    					<div class="p-handshake"></div>
+    					土豆网公司成立于1998年11月， 是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健、高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）。
+                    </div>
+    				<div class="t-companydescription">
+        				<p>&emsp;&emsp;土豆是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身土豆网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“土豆网”正式更名为“土豆”，标志着土豆进入品牌发展的新阶段。</p>
 
-					<p>&emsp;&emsp;每个人都是生活的导演”是土豆从创立第一天始的价值观。土豆相信年轻人的想象力、创造力，相信土豆的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，土豆提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
+    					<p>&emsp;&emsp;每个人都是生活的导演”是土豆从创立第一天始的价值观。土豆相信年轻人的想象力、创造力，相信土豆的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，土豆提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
 
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和土豆股份有限公司 (NASDAQ: TUDO) (“土豆”)共同宣布，优酷和土豆将以100%换股的方式合并。2012年8月20日，优酷土豆合并方案获双方股东大会高票批准通过，优酷土豆集团公司正式诞生。2013年4月，优酷土豆集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，土豆更土豆”的发展战略。</p>
+    					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和土豆股份有限公司 (NASDAQ: TUDO) (“土豆”)共同宣布，优酷和土豆将以100%换股的方式合并。2012年8月20日，优酷土豆合并方案获双方股东大会高票批准通过，优酷土豆集团公司正式诞生。2013年4月，优酷土豆集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，土豆更土豆”的发展战略。</p>
 
-					<p>&emsp;&emsp;土豆是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身土豆网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“土豆网”正式更名为“土豆”，标志着土豆进入品牌发展的新阶段。</p>
+    					<p>&emsp;&emsp;土豆是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身土豆网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“土豆网”正式更名为“土豆”，标志着土豆进入品牌发展的新阶段。</p>
 
-					<p>&emsp;&emsp;每个人都是生活的导演”是土豆从创立第一天始的价值观。土豆相信年轻人的想象力、创造力，相信土豆的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，土豆提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
+    					<p>&emsp;&emsp;每个人都是生活的导演”是土豆从创立第一天始的价值观。土豆相信年轻人的想象力、创造力，相信土豆的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，土豆提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
 
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和土豆股份有限公司 (NASDAQ: TUDO) (“土豆”)共同宣布，优酷和土豆将以100%换股的方式合并。2012年8月20日，优酷土豆合并方案获双方股东大会高票批准通过，优酷土豆集团公司正式诞生。2013年4月，优酷土豆集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，土豆更土豆”的发展战略。</p></div></li>
-    			<li id="c2" class="tab-pane fade in">
-    				<div class="tabtitle">
-    					<div class="picture"></div>
-    					地瓜网公司成立于1998年11月， 是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健、高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）。</div>
-    				<div class="text">
-    				<p>&emsp;&emsp;地瓜是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身地瓜网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“地瓜网”正式更名为“地瓜”，标志着地瓜进入品牌发展的新阶段。</p>
+    					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和土豆股份有限公司 (NASDAQ: TUDO) (“土豆”)共同宣布，优酷和土豆将以100%换股的方式合并。2012年8月20日，优酷土豆合并方案获双方股东大会高票批准通过，优酷土豆集团公司正式诞生。2013年4月，优酷土豆集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，土豆更土豆”的发展战略。</p>
+                    </div>
+                </li>
 
-					<p>&emsp;&emsp;每个人都是生活的导演”是地瓜从创立第一天始的价值观。地瓜相信年轻人的想象力、创造力，相信地瓜的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，地瓜提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
+                <li class="t2">
+                    <div class="m-tabhead">
+                        <div class="p-handshake"></div>
+                        白菜网公司成立于1998年11月， 是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健、高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）。
+                    </div>
+                    <div class="t-companydescription">
+                        <p>&emsp;&emsp;白菜是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身白菜网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“白菜网”正式更名为“白菜”，标志着白菜进入品牌发展的新阶段。</p>
 
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和地瓜股份有限公司 (NASDAQ: TUDO) (“地瓜”)共同宣布，优酷和地瓜将以100%换股的方式合并。2012年8月20日，优酷地瓜合并方案获双方股东大会高票批准通过，优酷地瓜集团公司正式诞生。2013年4月，优酷地瓜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，地瓜更地瓜”的发展战略。</p>
+                        <p>&emsp;&emsp;每个人都是生活的导演”是白菜从创立第一天始的价值观。白菜相信年轻人的想象力、创造力，相信白菜的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，白菜提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
 
-					<p>&emsp;&emsp;地瓜是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身地瓜网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“地瓜网”正式更名为“地瓜”，标志着地瓜进入品牌发展的新阶段。</p>
+                        <p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和白菜股份有限公司 (NASDAQ: TUDO) (“白菜”)共同宣布，优酷和白菜将以100%换股的方式合并。2012年8月20日，优酷白菜合并方案获双方股东大会高票批准通过，优酷白菜集团公司正式诞生。2013年4月，优酷白菜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，白菜更白菜”的发展战略。</p>
 
-					<p>&emsp;&emsp;每个人都是生活的导演”是地瓜从创立第一天始的价值观。地瓜相信年轻人的想象力、创造力，相信地瓜的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，地瓜提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
+                        <p>&emsp;&emsp;白菜是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身白菜网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“白菜网”正式更名为“白菜”，标志着白菜进入品牌发展的新阶段。</p>
 
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和地瓜股份有限公司 (NASDAQ: TUDO) (“地瓜”)共同宣布，优酷和地瓜将以100%换股的方式合并。2012年8月20日，优酷地瓜合并方案获双方股东大会高票批准通过，优酷地瓜集团公司正式诞生。2013年4月，优酷地瓜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，地瓜更地瓜”的发展战略。</p>
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和地瓜股份有限公司 (NASDAQ: TUDO) (“地瓜”)共同宣布，优酷和地瓜将以100%换股的方式合并。2012年8月20日，优酷地瓜合并方案获双方股东大会高票批准通过，优酷地瓜集团公司正式诞生。2013年4月，优酷地瓜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，地瓜更地瓜”的发展战略。</p>
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和地瓜股份有限公司 (NASDAQ: TUDO) (“地瓜”)共同宣布，优酷和地瓜将以100%换股的方式合并。2012年8月20日，优酷地瓜合并方案获双方股东大会高票批准通过，优酷地瓜集团公司正式诞生。2013年4月，优酷地瓜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，地瓜更地瓜”的发展战略。</p></div></li>
-    			<li id="c3" class="tab-pane fade in">
-    				<div class="tabtitle">
-    					<div class="picture"></div>
-    					白菜网公司成立于1998年11月， 是目前中国最大的互联网综合服务提供商之一，也是中国服务用户最多的互联网企业之一。成立10多年以来，腾讯一直秉承一切以用户价值为依归的经营理念，始终处于稳健、高速发展的状态。2004年6月16日，腾讯公司在香港联交所主板公开上市（股票代号700）。</div>
-    				<div class="text">
-    				<p>&emsp;&emsp;白菜是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身白菜网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“白菜网”正式更名为“白菜”，标志着白菜进入品牌发展的新阶段。</p>
+                        <p>&emsp;&emsp;每个人都是生活的导演”是白菜从创立第一天始的价值观。白菜相信年轻人的想象力、创造力，相信白菜的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，白菜提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
 
-					<p>&emsp;&emsp;每个人都是生活的导演”是白菜从创立第一天始的价值观。白菜相信年轻人的想象力、创造力，相信白菜的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，白菜提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
-
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和白菜股份有限公司 (NASDAQ: TUDO) (“白菜”)共同宣布，优酷和白菜将以100%换股的方式合并。2012年8月20日，优酷白菜合并方案获双方股东大会高票批准通过，优酷白菜集团公司正式诞生。2013年4月，优酷白菜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，白菜更白菜”的发展战略。</p>
-
-					<p>&emsp;&emsp;白菜是中国最早和最具影响力的网络视频平台，是中国网络视频行业的领军品牌。其前身白菜网于2005年4月15日正式上线，是全球最早上线的视频网站之一。2014年1月，“白菜网”正式更名为“白菜”，标志着白菜进入品牌发展的新阶段。</p>
-
-					<p>&emsp;&emsp;每个人都是生活的导演”是白菜从创立第一天始的价值观。白菜相信年轻人的想象力、创造力，相信白菜的平台能帮助年轻人创造出更多，更好的影像作品，来表达对自己、生活和这个时代的看法。同时，白菜提倡尊重“每个人”的个性，尊重每个人自主地选择自己的生活，成为自己成长的导演。</p>
-
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和白菜股份有限公司 (NASDAQ: TUDO) (“白菜”)共同宣布，优酷和白菜将以100%换股的方式合并。2012年8月20日，优酷白菜合并方案获双方股东大会高票批准通过，优酷白菜集团公司正式诞生。2013年4月，优酷白菜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，白菜更白菜”的发展战略。</p>
-					<p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和白菜股份有限公司 (NASDAQ: TUDO) (“白菜”)共同宣布，优酷和白菜将以100%换股的方式合并。2012年8月20日，优酷白菜合并方案获双方股东大会高票批准通过，优酷白菜集团公司正式诞生。2013年4月，优酷白菜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，白菜更白菜”的发展战略。</p></div></li>
+                        <p>&emsp;&emsp;2012年3月12日，优酷股份有限公司(NYSE: YOKU) (“优酷”)和白菜股份有限公司 (NASDAQ: TUDO) (“白菜”)共同宣布，优酷和白菜将以100%换股的方式合并。2012年8月20日，优酷白菜合并方案获双方股东大会高票批准通过，优酷白菜集团公司正式诞生。2013年4月，优酷白菜集团宣布进入“集团BU化”运营阶段，提出“优酷更优酷，白菜更白菜”的发展战略。</p>
+                    </div>
+                </li>
     		</ul>
     	</div>
     </div>
@@ -140,46 +131,23 @@
 
 
 <footer>
-	<div class="container footbox">
-		<div class="row">
-			<div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 foot1">
-				<div class="foottext1">技能树——改变你我</div><br/>
-				<div class="foottext2"><a>关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>合作企业</a></div>
-			</div>
-			<div class="col-lg-3 col-sm-5 col-xs-12 foot2">
-				<span class="foottext3">旗下网站</span><br/>
-				<span class="foottext4"><a>草船云孵化器</a></span>&emsp;&emsp;&emsp;<a>最强IT特训营</a><br/>
-				<a>葡萄藤轻游戏</a>&emsp;&emsp;&emsp;<a>桌游精灵</a>
-			</div>
-			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 foot3">
-				<span class="qrcodetext">微信公众平台</span>
-				<div class="qrcode"></div>			
-			</div>
-		</div>
-	</div>
-	<div class="foot4">  Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP</div>
+        <div class="c-row">
+            <div class="col-lg-3 col-md-4 col-sm-5 col-xs-12 m-weblink1">
+                <div class="t-foot1">技能树——改变你我</div><br/>
+                <div class="t-foot2"><a>关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a>合作企业</a></div>
+            </div>
+            <div class="col-lg-3 col-sm-5 col-xs-12 m-weblink2">
+                <span class="t-foot3">旗下网站</span><br/>
+                <span class="t-foot4"><a>草船云孵化器</a></span>&emsp;&emsp;&emsp;<a>最强IT特训营</a><br/>
+                <a>葡萄藤轻游戏</a>&emsp;&emsp;&emsp;<a>桌游精灵</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12 m-weblink3">
+                <span class="t-qrcode">微信公众平台</span>
+                <div class="p-qrcode"></div>            
+            </div>
+        </div>
+    <div class="u-copyright">  Copyright © 2015技能树 www.jnshu.com  All Rights Reserved | 京ICP</div>
 </footer>
-
-<!-- Latest compiled and minified CSS -->
-<script
-  src="https://code.jquery.com/jquery-1.12.4.js"
-  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-  crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script type="text/javascript">
-    var oLis=document.getElementById("option").getElementsByTagName("span");
-    var i,j;
-    var length=oLis.length;
-    for(i=0;i<length;i++){
-        oLis[i].onclick=function(){
-            for(j=0;j<length;j++){
-                oLis[j].className="o1";
-            }
-            this.className+="checkedstyle";
-        }
-    }
-</script>
 
 </body>
 </html>
