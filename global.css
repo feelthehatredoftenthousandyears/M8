@@ -74,6 +74,12 @@
     	margin-right: auto;
     	margin-left: auto;
     }
+    .m-head {
+	padding: 0 calc((100% - 750px)/2 + 70px);
+	}
+	.m-navbar {
+	padding-right: calc((100% - 750px)/2 + 40px);
+	}
 	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
 	    float: left;
 	    box-sizing: border-box;
@@ -120,6 +126,12 @@
     	width: 970px;
     	margin-right: auto;
     	margin-left: auto;
+	}
+	.m-head {
+	padding: 0 calc((100% - 970px)/2 + 70px);
+	}
+	.m-navbar {
+	padding-right: calc((100% - 970px)/2 + 40px);
 	}
 	  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     	float: left;
@@ -168,6 +180,12 @@
     	margin-right: auto;
     	margin-left: auto;
 	}
+	.m-head {
+	padding: 0 calc((100% - 1170px)/2 + 70px);
+	}
+	.m-navbar {
+	padding-right: calc((100% - 1170px)/2 + 40px);
+	}
 	.col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     	float: left;
     	box-sizing: border-box;
@@ -212,9 +230,6 @@
 /*/module/////////////////////////////////////////////////////////////////*/
 /*头部------------------------------------------------*/
 .m-head {
-	position: absolute;
-	top: 0;
-	width: 100%;
 	height: 40px;
 	background-color: #fff;
 	font-size: .14rem;
@@ -239,8 +254,6 @@
     }
 .t-phonenumber {
 	float: left;
-	margin-left: 20%;
-	height: 40px;
 	line-height: 40px;
 	color: #29b078;
 }
@@ -252,9 +265,6 @@
 	color: #29b078;
 	cursor: pointer;
 }
-.u-qqicon {
-	margin: 0 12% 0 0;
-}
 .u-wecharticon {
 	margin: 0 10px 0 0;
 }
@@ -264,8 +274,6 @@
 
 /*导航条部分------------------------------------------------*/
 .m-navbar {
-	margin-top: 40px;
-	padding-right: 10%;
 	text-align: right;
 	font-size: 0;
 	color: #fff;
@@ -277,8 +285,13 @@
 	padding: 35px 35px 30px;
 	font-size: .16rem;
 	cursor: pointer;
+	border: 1px solid transparent;
 }
 .t-nav:hover {
+	border-bottom: 5px solid #fff;
+}
+.t-nav:active {
+	border: 1px dotted #a6a6a6;
 	border-bottom: 5px solid #fff;
 }
 .chosed {
@@ -499,6 +512,7 @@ footer{
 	float: right;
 	width: 40px;
 	height: 40px;
+	margin-right: 5%;
 	text-align: center;
 	line-height: 10px;
 	font-size: .7rem;
@@ -506,4 +520,10 @@ footer{
 	color: #b7b7b7;
 	background-color: #fff;
 	border-radius: 3px;
+}
+a:hover {
+	border-bottom: 2px solid #a6a6a6;
+}
+a:active {
+	box-shadow: 0 0 2px 2px;
 }

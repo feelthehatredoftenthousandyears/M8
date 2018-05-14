@@ -51,8 +51,9 @@
   float: left;
   width: calc(100% - 180px);
   padding: 30px 10px 0;
-  word-wrap: break-word;
-  font-size: .13rem; }
+  font-size: .13rem;
+  word-break: break-all;
+  }
 
 .c-boxheadtext > div {
   margin: 3% 0;
