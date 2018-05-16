@@ -1,9 +1,10 @@
 .m-probox {
   margin: 0;
-  padding: 15px 0;
+  padding: 15px 60px;
   font-size: .14rem;
   color: #a9a9a9;
-  border-bottom: 1px solid #edf1f2; }
+  border-bottom: 1px solid #edf1f2;
+  }
 
 .u-probox1 input[type=radio] {
   display: none; }
@@ -20,11 +21,12 @@
 
 .u-esptitle {
   padding: 20px 0;
-  margin: 0;
+  margin: 0 60px;
   font-size: .15rem;
   font-weight: 600;
   font-family: Microsoft YaHei;
-  border-bottom: 1px solid #a9a9a9; }
+  border-bottom: 1px solid #a9a9a9;
+  }
 
 .m-mainblock {
   position: relative;
