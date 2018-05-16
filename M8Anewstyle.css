@@ -1,11 +1,20 @@
 .m-probox {
   margin: 0;
-  padding: 15px 60px;
+  padding: 15px 40px;
   font-size: .14rem;
   color: #a9a9a9;
   border-bottom: 1px solid #edf1f2;
   }
-
+@media (max-width: 768px) {
+	.m-probox {
+	  padding: 15px 0;
+	}
+}
+@media (max-width: 360px) {
+	.m-probox {
+	  padding: 15px;
+	}
+}
 .u-probox1 input[type=radio] {
   display: none; }
 
@@ -21,18 +30,30 @@
 
 .u-esptitle {
   padding: 20px 0;
-  margin: 0 60px;
+  margin: 0 40px;
   font-size: .15rem;
   font-weight: 600;
   font-family: Microsoft YaHei;
   border-bottom: 1px solid #a9a9a9;
   }
+@media (max-width: 768px) {
+	.u-esptitle  {
+	  margin: 0;
+	}
+}
+@media (max-width: 360px) {
+	.u-esptitle  {
+	  margin: 15px;
+	}
+}
 
 .m-mainblock {
   position: relative;
   margin-top: 50px;
   margin-bottom: 50px;
-  padding: 0 15px; }
+  padding: 0 15px;
+  /* border: 15px solid transparent; */
+  }
 
 .c-boxhead {
   margin: 0 2px;
@@ -41,7 +62,8 @@
 
 @media (max-width: 360px) {
   .m-mainblock {
-    padding: 0; } }
+    padding: 0 15px;
+    } }
 .c-boxheadimg {
   float: left;
   margin: 20px 10px;
@@ -132,7 +154,8 @@
   line-height: .2rem;
   font-size: .14rem;
   color: #fff;
-  opacity: 0; }
+  opacity: 0;
+  }
 
 .c-boxheadpanel div {
   margin: 20px 0;

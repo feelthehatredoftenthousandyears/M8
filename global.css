@@ -48,27 +48,33 @@
 /*主体------------------------------------------------*/
 .c-row {
 	overflow: hidden;
-	padding: 0 20px;
+	/* padding: 0 20px; */
 }
 .c-row2 {
 	overflow: hidden;
 	margin: 0 -15px;
-	padding: 0 60px;
+	padding: 0 40px;
 }
 .c-row3 {
 	overflow: hidden;
-	padding: 0 60px;
+	padding: 0 40px;
 }
 @media (max-width: 768px) {
 	.g-main {
 		margin-right: 10%;
 		margin-left: 10%;
 	}
+	.c-row2 {
+	padding: 0;
+	}
+	.c-row3 {
+	padding: 0;
+}
 }
 @media (max-width: 360px) {
 	.g-main {
-		margin-right: 15px;
-		margin-left: 15px;
+		margin-right: 0;
+		margin-left: 0;
 	}
 	.c-row2 {
 		margin: 0;
@@ -76,7 +82,7 @@
 }
 @media (min-width: 768px) {
 	.g-main {
-    	width: 750px;
+    	width: 720px;
     	margin-right: auto;
     	margin-left: auto;
     }
@@ -138,10 +144,10 @@
 }
 @media (min-width: 992px) {
 	.g-main {
-    	width: 970px;
+    	width: 940px;
     	margin-right: auto;
     	margin-left: auto;
-	}
+ }
 	.m-head {
 	padding: 0 calc((100% - 970px)/2 + 60px);
 	}
@@ -200,10 +206,10 @@
 }
 @media (min-width: 1200px) {
 	.g-main {
-    	width: 1170px;
+    	width: 1140px;
     	margin-right: auto;
     	margin-left: auto;
-	}
+ }
 	.m-head {
 	padding: 0 calc((100% - 1170px)/2 + 60px);
 	}
@@ -502,7 +508,7 @@ footer{
 	cursor: pointer;
 }
 .t-foot4{
-	border-bottom: 1px solid;
+	/* border-bottom: 1px solid; */
 }
 .u-copyright{
 	height: 30px;
@@ -535,10 +541,20 @@ footer{
 /*breadcrumbs-----------------------------------------*/
 .m-breadcrumbs {
 	padding: 20px 0;
-	margin: 0 60px;
+	margin: 0 40px;
 	color: #29b078;
 	font-size: .15rem;
 	border-bottom: 1px solid #a9a9a9;
+}
+@media (max-width: 768px) {
+	.m-breadcrumbs {
+		margin: 0;
+	}
+}
+@media (max-width: 360px) {
+	.m-breadcrumbs {
+		margin: 0 15px;
+	}
 }
 /*/unit/////////////////////////////////////////////////////////////////*/
 .delta {
@@ -568,7 +584,7 @@ footer{
 .carouselbox2 {
     position: relative;
     display: inline-block;
-    padding: 0 40px;
+    padding: 0 20px;
     transition: -webkit-transform 1s, transform 1s;
 }
 a:hover {

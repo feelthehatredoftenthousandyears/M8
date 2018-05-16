@@ -84,6 +84,11 @@
   background-color: #fff; }
   .c-companydescription li {
     display: none; }
+@media (max-width: 768px) {
+	.c-companydescription {
+		margin: 0;
+	}
+}
 
 .t-companydescription {
   padding: 30px 60px;
@@ -103,8 +108,5 @@
 #hiddenoption12:checked ~ .c-rightside .t12 {
   display: block; }
 
-@media (max-width: 768px) {
-  .m-breadcrumbs {
-    padding-left: 20px; } }
 
 /*# sourceMappingURL=M8Bnewstyle.css.map */
